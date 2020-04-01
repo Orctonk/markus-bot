@@ -1,0 +1,15 @@
+# VSCode settings
+.settings
+
+# Maven files
+.classpath
+.factorypath
+.project
+dependency-reduced-pom.xml
+
+# Build output
+target
+
+# Local project files
+sp.db
+token.tk
