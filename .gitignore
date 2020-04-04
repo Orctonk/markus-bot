@@ -1,4 +1,7 @@
 # VSCode settings
+.vscode
+
+# Eclipse settings
 .settings
 
 # Maven files
