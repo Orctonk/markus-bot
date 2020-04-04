@@ -21,7 +21,11 @@ public class Markus {
     private static final String jesus = "👼";
         public static void main( String[] args )
     {
-        DiscordClientBuilder builder = new DiscordClientBuilder(args[1]);
+        if(args.length == 0){
+            System.err.println("Please pass the discord app token as an argument when running the bot!");
+            return;
+        }
+        DiscordClientBuilder builder = new DiscordClientBuilder(args[0]);
 
         DiscordClient client = builder.build();
 
