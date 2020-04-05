@@ -1,4 +1,4 @@
-package se.projektmas;
+package se.projektmas.modules.sjpoints;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

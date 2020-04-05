@@ -1,4 +1,4 @@
-package se.projektmas;
+package se.projektmas.modules.sjpoints;
 
 public class TallyRow {
     public String snowflake;

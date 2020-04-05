@@ -2,6 +2,6 @@ package se.projektmas;
 
 import discord4j.core.event.domain.message.MessageCreateEvent;
 
-interface ICommand{
+public interface ICommand{
     void execute(MessageCreateEvent event);
 }
