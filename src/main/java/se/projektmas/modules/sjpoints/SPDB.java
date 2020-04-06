@@ -15,7 +15,7 @@ enum Point{
 }
 
 public class SPDB {
-    private static final String sqldriver = "jdbc:sqlite:sp.db";
+    private static final String sqldriver = "jdbc:sqlite:markus.db";
     private static Connection conn = null;
     
     public static void connect(){

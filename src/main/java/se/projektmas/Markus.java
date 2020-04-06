@@ -1,10 +1,8 @@
 package se.projektmas;
 
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 import discord4j.core.DiscordClient;
@@ -13,12 +11,14 @@ import discord4j.core.event.domain.lifecycle.*;
 import discord4j.core.event.domain.message.*;
 
 import se.projektmas.modules.Module;
+import se.projektmas.modules.quotes.QuoteModule;
 import se.projektmas.modules.sjpoints.PointModule;
 
 public class Markus {
     private static List<Module> modules = new LinkedList<Module>(
         Arrays.asList(
-            new PointModule()
+            new PointModule(),
+            new QuoteModule()
         )
     );
         public static void main( String[] args )
