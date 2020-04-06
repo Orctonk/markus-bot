@@ -14,5 +14,6 @@ dependency-reduced-pom.xml
 target
 
 # Local project files
-sp.db
+*.db
 token.tk
+messages.json
