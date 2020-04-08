@@ -42,4 +42,42 @@ public class QuoteDB {
 
         return retlist;
     }
+
+    public static Quote getRandomQuote(){
+        Quote q = null;
+
+        String sql = "SELECT * FROM quotes ORDER BY RANDOM() LIMIT 1;";
+
+        try(Statement stmt = conn.createStatement()){
+            ResultSet rs = stmt.executeQuery(sql);
+            rs.next();
+            String quote = rs.getString(2);
+            String quotee = rs.getString(3);
+            String timestamp = rs.getString(4);
+            String sender = rs.getString(5);
+            q = new Quote(quote,quotee,sender,timestamp);
+            
+        } catch(SQLException e){
+            System.out.println(e.getMessage());
+        }
+
+        return q;
+    }
+
+    public static String getRandomGenQuote(){
+        String q = null;
+
+        String sql = "SELECT * FROM genquotes ORDER BY RANDOM() LIMIT 1;";
+
+        try(Statement stmt = conn.createStatement()){
+            ResultSet rs = stmt.executeQuery(sql);
+            rs.next();
+            q = rs.getString(2);
+            
+        } catch(SQLException e){
+            System.out.println(e.getMessage());
+        }
+
+        return q;
+    }
 }
