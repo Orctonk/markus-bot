@@ -13,7 +13,11 @@ dependency-reduced-pom.xml
 # Build output
 target
 
+# Log files
+logs/
+
 # Local project files
 *.db
+movesrv.sh
 token.tk
 messages.json
